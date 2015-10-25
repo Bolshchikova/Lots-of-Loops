@@ -126,26 +126,26 @@ hr {
   margin-top: 1.5em;
 }
 
-.hero span{
+.hero span {
   font-family: "Josefin Slab", Times, Georgia, serif;
   position: absolute;
   left: 52%;
   top:15%;
 }
-.hero span p{
+.hero span p {
   font-size: 28px;
   font-weight: 600;
   text-align: left;
   color: #9D5374;
   line-height: 33px;
 }
-.hero span .one{
+.hero span .one {
 	margin: 0;
 }
-.hero span .two{
+.hero span .two {
 	margin:0.6em 0 0 0;
 }
-.hero span .three{
+.hero span .three {
 	margin: 0;
 	text-align: right;
 	padding-right: 1.2em;
