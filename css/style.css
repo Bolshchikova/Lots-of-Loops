@@ -3,6 +3,7 @@ html, body {
 }
 body {
 	font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+	font-size: 17px;
 	color: #421729;
 } 
 h1, h2, h3, h4, h5, h6 {
@@ -12,7 +13,6 @@ h2 {
 	font-size: 34px;
 	font-weight: 600;
 	color: #721B3F;
-	margin-bottom: 5px;
 }
 p {
 	font-size: 17px;
@@ -20,53 +20,133 @@ p {
 	font-weight: 400;
 }
 
-/* GRID */
-.container {
-	margin-right: auto;
-	margin-left: auto;
-	padding-left: 15px;
-	padding-right: 15px;
-	position: relative;
-}
-.container:before,
-.container:after {
-	content: " ";
-	display: table;
-}
-.container:after {
-	clear: both;
-}
-.one-third, .one-fourth {
-	width: 96%;
-	float: left;
-	position: relative;
-	min-height: 1px;
-	margin: 0 2% 20px;
-}
-@media (min-width: 768px) {
-	.container {
-		width: 750px;
-	}
-}
-@media (min-width: 992px) {
-	.container {
-		width: 970px;
-	}
-	.one-third {
-		width: 29.33333%;
-	}
-	.one-fourth {
-		width: 21%;
-	}
-}
-@media (min-width: 1200px) {
-	.container {
-		width: 1170px;
-	}
-}
-
 /* HEADER */
 
 header {
-	color: #721B3F;
+  color: #721B3F;
+  margin: 20px 0 30px 0;
+}
+header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media all and (max-width: 600px) {
+  .logo .account { flex: 1 auto; }
+  .logo {order: 1;}
+  .account {order: 2;}
+  .title {order: 3;}
+}
+
+@media all and (min-width: 650px) {
+  .logo {order: 1;}
+  .title {order: 2;}
+  .account {order: 3;}
+}
+.title h1 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 38px;
+  text-align: center;
+  color: #9D5374;
+  line-height: 43px;
+}
+.account a {
+  text-decoration: none;
+  color: #721B3F;
+  font-size: 15px;
+  font-weight: 700;
+}
+.account a:hover {
+  color: #CD9DB1;
+}
+.cart {
+  margin-top: 0.5em;
+  position: relative;
+}
+.cart span {
+  position: absolute;
+  margin-left: 10px;
+  font-weight: 400;
+}
+.cart span:after {
+  content: " ";
+  position: absolute;
+  right: -17px;
+  top: 4px;
+  border: 8px solid transparent;
+  border-top: 12px solid #721B3F;
+  display: block;
+}
+
+hr {
+  border: none;
+  background-color: #916478;
+  color: #916478;
+  height: 1px; 
+  margin: 0px;
+}
+  
+/* Navigation */
+.menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap; 
+}
+.menu a {
+  font-size: 16px;
+  text-decoration: none;
+  padding: 0 1.2em;
+  color: #721B3F;
+  height: 1.5em;
+  padding-top: 0.7em; 
+}
+.menu a:hover {
+  background: #916478;
+  color: #FFDA6B;
+}
+
+/* Hero */
+.hero {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.hero span{
+  font-family: "Josefin Slab", Times, Georgia, serif;
+  position: absolute;
+  left: 52%;
+  top:15%;
+}
+.hero span p{
+  font-size: 28px;
+  font-weight: 600;
+  text-align: left;
+  color: #9D5374;
+  line-height: 33px;
+}
+.hero span .one{
+	margin: 0;
+}
+.hero span .two{
+	margin:0.6em 0 0 0;
+}
+.hero span .three{
+	margin: 0;
+	text-align: right;
+	padding-right: 1.2em;
 }
