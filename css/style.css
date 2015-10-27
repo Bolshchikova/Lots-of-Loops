@@ -1,30 +1,30 @@
 html, body {
-	overflow-x: hidden;
+  overflow-x: hidden;
 }
 body {
-	font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
-	font-size: 17px;
-	color: #421729;
-} 
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  color: #421729;
+}
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Josefin Slab", Times, Georgia, serif;
+  font-family: "Josefin Slab", Times, Georgia, serif;
 }
 h2 {
-	font-size: 34px;
-	font-weight: 600;
-	color: #721B3F;
+  font-size: 2em;
+  font-weight: 600;
+  color: #721B3F;
 }
 p {
-	font-size: 17px;
-	line-height: 21px;
-	font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 400;
 }
 
 /* HEADER */
 
 header {
   color: #721B3F;
-  margin: 20px 0 30px 0;
+  margin: 1.2em 0 1.8em 0;
 }
 header {
   display: -webkit-box;
@@ -32,7 +32,7 @@ header {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  
+
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
@@ -53,15 +53,14 @@ header {
 .title h1 {
   font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
   font-weight: 600;
-  font-size: 38px;
+  font-size: 2.28em;
   text-align: center;
   color: #9D5374;
-  line-height: 43px;
 }
 .account a {
   text-decoration: none;
   color: #721B3F;
-  font-size: 15px;
+  font-size: 0.9em;
   font-weight: 700;
 }
 .account a:hover {
@@ -73,45 +72,49 @@ header {
 }
 .cart span {
   position: absolute;
-  margin-left: 10px;
+  margin-left: 0.7em;
   font-weight: 400;
 }
 .cart span:after {
   content: " ";
   position: absolute;
-  right: -17px;
-  top: 4px;
-  border: 8px solid transparent;
-  border-top: 12px solid #721B3F;
+  right: -1.3em;
+  top: 0.24em;
+  border: 0.6em solid transparent;
+  border-top: 0.8em solid #721B3F;
   display: block;
+}
+.cart span:hover:after {
+  border-top: 0.8em solid #CD9DB1;
 }
 
 hr {
   border: none;
   background-color: #916478;
   color: #916478;
-  height: 1px; 
-  margin: 0px;
+  height: 0.06em;
+  margin: 0;
 }
-  
+
 /* Navigation */
 .menu {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  -webkit-flex-flow: row wrap; 
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
 .menu a {
-  font-size: 16px;
+  font-size: 0.93em;
   text-decoration: none;
   padding: 0 1.2em;
   color: #721B3F;
   height: 1.5em;
-  padding-top: 0.7em; 
+  padding-top: 0.7em;
 }
 .menu a:hover {
   background: #916478;
@@ -120,33 +123,283 @@ hr {
 
 /* Hero */
 .hero {
-  display: block;
-  position: relative;
-  text-align: center;
-  margin-top: 1.5em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1.2em;
 }
 
-.hero span {
+.hero img {
+  width: 100%;
+}
+
+.hero > div {
+  position: relative;
+}
+
+.hero-text {
   font-family: "Josefin Slab", Times, Georgia, serif;
   position: absolute;
   left: 52%;
-  top:15%;
+  top: 16%;
 }
-.hero span p {
-  font-size: 28px;
+.hero-text p {
+  font-size: 1.6em;
   font-weight: 600;
   text-align: left;
   color: #9D5374;
-  line-height: 33px;
+  line-height: 1.3em;
 }
-.hero span .one {
-	margin: 0;
+.hero-text .one {
+  margin: 0;
 }
-.hero span .two {
-	margin:0.6em 0 0 0;
+.hero-text .two {
+  margin:0.6em 0 0 0;
 }
-.hero span .three {
-	margin: 0;
-	text-align: right;
-	padding-right: 1.2em;
+.hero-text .three {
+  margin: 0;
+  text-align: right;
+  padding-right: 1.2em;
+}
+
+@media (max-width: 770px) {
+  .hero-text {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 620px) {
+  .hero-text {
+    font-size: 0.65em;
+  }
+  .slog h2 {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 500px) {
+  .hero-text {
+    font-size: 0.56em;
+  }
+}
+@media (max-width: 420px) {
+  .hero-text {
+    font-size: 0.5em;
+  }
+}
+
+/* Main */
+.main, footer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap; 
+  
+  -webkit-justify-content: space-around; 
+  -moz-justify-content: space-around; 
+  -ms-justify-content: space-around; 
+  justify-content: space-around;
+  
+  align-items: center;
+}
+.slog {
+  text-align: center;
+  flex: 0 1 78%;
+}
+.block {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  -webkit-justify-content: space-around; 
+  -moz-justify-content: space-around; 
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-between;
+  width: 58.5em;
+}
+
+/*Cloth*/
+.men {
+  position: relative;
+  flex: 0 1 49%; 
+}
+.men img, .sha img, .toy img {
+   width: 100%;
+}
+.sign {
+  position: absolute;
+  top: 75%;
+  width: 100%;
+  opacity: 0.6;
+  background: #FFFFFF;
+}
+.sign p {
+  font-size: 2em;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  color: #721B3F;
+  margin: 0.4em 0;
+}
+@media (max-width: 580px) {
+  .men {
+    flex: 0 1 100%;
+  }
+}
+
+/*Shawls*/
+.sha {
+  position: relative;
+  flex: 0 1 32%;  
+}
+@media (max-width: 900px) {
+  .sha {
+    flex: 0 1 48%;
+  }
+}
+@media (max-width: 580px) {
+  .sha {
+    flex: 0 1 100%;
+  }
+}
+
+/*Toys*/
+.toy {
+  position: relative;
+  flex: 0 1 24%; 
+}
+@media (max-width: 768px) {
+  .toy {
+    flex: 0 1 48%;
+  }
+}
+@media (max-width: 520px) {
+  .toy {
+    flex: 0 1 100%;
+  }
+}
+
+/* Back to top */
+.top {
+  width: 100%;
+  height: 1.5em;
+  position: relative;
+  margin: 0.6em 0;
+}
+.top div {
+  position: absolute;
+  top: 0;
+  left: 77%;
+}
+.top a {
+text-decoration: none;
+font-size: 0.9em;
+font-weight: 600;
+color: #916478;
+}
+
+/* Footer */
+footer {
+  background-color: #421729;
+  }
+.foot {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 58.5em;
+  padding: 0 1%;
+}
+.foot h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #916478;
+  margin: 1em 0 0.5em;
+}
+
+.email input {
+  height: 2.2em;
+  border-radius: 4px;
+  border-color: #FFF;
+}
+.email button {
+  background: #421729;
+  border: 1px solid #FFDA6B;
+  border-radius: 4px;
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  color: #FFDA6B;
+  padding: 0.42em 1.5em 0.3em;
+  margin-left: 0.3em;
+}
+.email p {
+  font-size: 0.8em;
+  color: #FFFFFF;
+}
+
+.info {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 0.6em;
+}
+.info a {
+color: #FFFFFF;
+line-height: 1.5em;
+text-decoration: none;
+}
+.info a:hover {
+  color: #916478;
+}
+
+.icon {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+}
+.connect {
+  width: 4em;
+  height: 7.8em;
+}
+.copy {
+  width: 98%;
+  padding: 0 1%;
+}
+.copy p {
+  font-size: 0.8em;
+  color: #916478;
+  margin: 0.3em 0;
+}
+
+@media (max-width: 768px) {
+  .foot {
+    justify-content: space-around;
+  }
+  .email {
+    width: 100%;
+    text-align: center;
+  }
+  .email button {
+    margin-top: 0.5em;
+  }
 }
