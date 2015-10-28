@@ -40,7 +40,7 @@
 
 <hr>
   <nav class="menu">
-    <a href="#index.html">HOME</a>
+    <a href="index.html">HOME</a>
     <a href="Women.html">WOMEN</a>
     <a href="#">MEN</a>
     <a href="#">ACCESSORIES</a>
@@ -54,7 +54,26 @@
 <!-- Main --> 
 <main class="main">
   <div class="container">
+
+<!-- Subtitle -->
+    <div class="subtitle">
+      <h2>All Toys</h2>
+        <div class="sortby">
+          <span>Sort by</span>
+          <form>
+            <select class="sort" onchange="this.form.submit();" name="sort">
+              <option value="s2" selected="">Most Recent</option>
+              <option value="s3">Price Lowest</option>
+              <option value="s3">Price Highest</option>
+            </select> 
+            <input type="hidden" value="Отправить"></input>
+          </form>
+        </div>
+    </div>
+
+<!-- Navigation -->
     <div class="navi">
+      <div>
       <ul class="category">
         <li><h3>CATEGORY</h3></li>
         <li><a href="#">All Women's</a></li>
@@ -63,6 +82,8 @@
         <li><a class="active2" href="toys.html">Toys</a></li>
         <hr>
       </ul>
+      </div>
+      <div>
       <ul class="type">
         <li><h3>TYPE</h3></li>
         <li><a href="#">Sweaters</a></li>
@@ -75,6 +96,8 @@
         <li><a href="#">Scarves</a></li>
         <hr>
       </ul>
+      </div>
+      <div>
       <ul class="price">
         <li><h3>PRICE</h3></li>
         <li><a href="#">Any</a></li>
@@ -85,6 +108,8 @@
         <li><a href="#">>$400</a></li>
         <hr>
       </ul>
+      </div>
+      <div>
       <ul class="size">
         <li><h3>SIZE</h3></li>
         <li><a href="#">XS</a></li>
@@ -94,104 +119,87 @@
         <li><a href="#">XL</a></li>
         <li><a href="#">XXL</a></li>
       </ul>
+      </div>
     </div>
-    
-    <div class="content">
-        <div class="subtitle">
-          <h2>All Toys</h2>
-          <div class="sortby">
-            <span>Sort by</span>
-            <form>
-              <select onchange="this.form.submit();" name="sort">
-                <option value="s2" selected="">Most Recent</option>
-                <option value="s3">Price Lowest</option>
-                <option value="s3">Price Highest</option>
-              </select> 
-              <input type="hidden" value="Отправить"></input>
-            </form>
-          </div>
+
+<!-- Content -->        
+    <div class="photos">
+      <div class="item">
+        <a href="#"><img src="images/IMG_3790-2.jpg" alt="Bunny" /></a> 
+        <div class="lable"> 
+          <p><strong>Cool Dude Bunny</strong><br>$400</p>
         </div>
+      </div> 
 
-<!-- Photos -->        
-        <div class="photos">
-            <div class="item">
-              <a href="#"><img src="images/IMG_3790-2.jpg" alt="Bunny" /></a> 
-              <div class="lable"> 
-                <p><strong>Cool Dude Bunny</strong><br>$400</p>
-              </div>
-            </div> 
-
-            <div class="item">
-              <a href="#"><img src="images/owl-2.jpg" alt="Owl" /></a>
-              <div class="lable"> 
-                <p><strong>Snowy the Owl</strong><br>$400</p>
-              </div>
-            </div> 
-
-            <div class="item">
-              <a href="#"><img src="images/goat.jpg" alt="Goat" /></a>
-              <div class="lable"> 
-                <p><strong>Lucy the Goat</strong><br>$150</p>
-              </div>
+      <div class="item">
+        <a href="#"><img src="images/owl-2.jpg" alt="Owl" /></a>
+        <div class="lable"> 
+          <p><strong>Snowy the Owl</strong><br>$400</p>
             </div>
+      </div> 
 
-            <div class="item">
-              <a href="#"><img src="images/dog.jpg" alt="Dog" /></a>
-              <div class="lable"> 
-                <p><strong>Nosy Charlie the Dog</strong><br>$250</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <a href="#"><img src="images/dol-2.jpg" alt="Dog" /></a>
-              <div class="lable"> 
-                <p><strong>Curly Penny</strong><br>$350</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <a href="#"><img src="images/timmy.jpg" alt="Dog" /></a>
-              <div class="lable"> 
-                <p><strong>Timmy the Hedgehog</strong><br>$350</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <a href="#"><img src="images/bird.jpg" alt="Dog" /></a>
-              <div class="lable"> 
-                <p><strong>Andrew Bird</strong><br>$300</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <a href="#"><img src="images/man.jpg" alt="Dog" /></a>
-              <div class="lable"> 
-                <p><strong>Aristarkh the Home Talisman</strong><br>$200</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <a href="#"><img src="images/cat.jpg" alt="Cat" /></a>
-              <div class="lable"> 
-                <p><strong>Paramon the Cat</strong><br>$300</p>
-              </div>
-            </div>
+      <div class="item">
+        <a href="#"><img src="images/goat.jpg" alt="Goat" /></a>
+        <div class="lable"> 
+          <p><strong>Lucy the Goat</strong><br>$150</p>
         </div>
+      </div>
 
-<!-- Bottom -->
-        <table class="pages">
-          <tr> 
-            <td><a href="#"><img src="images/angle_left.png" /></a></td>
-            <td><a href="#" class="active3">1</a></td>
-            <td><a href="#">2</a></td>
-            <td><a href="#">3</a></td>
-            <td><a href="#"><img src="images/angle_right.png" /></a></td>
-            <td><a href="#"><p>View All</p></a></td>
-          </tr>
-        </table>
-    </div>  
+      <div class="item">
+        <a href="#"><img src="images/dog.jpg" alt="Dog" /></a>
+        <div class="lable"> 
+          <p><strong>Nosy Charlie the Dog</strong><br>$250</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <a href="#"><img src="images/dol-2.jpg" alt="Dog" /></a>
+        <div class="lable"> 
+          <p><strong>Curly Penny</strong><br>$350</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <a href="#"><img src="images/timmy.jpg" alt="Dog" /></a>
+        <div class="lable"> 
+          <p><strong>Timmy the Hedgehog</strong><br>$350</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <a href="#"><img src="images/bird.jpg" alt="Dog" /></a>
+        <div class="lable"> 
+          <p><strong>Andrew Bird</strong><br>$300</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <a href="#"><img src="images/man.jpg" alt="Dog" /></a>
+        <div class="lable"> 
+          <p><strong>Aristarkh the Home Talisman</strong><br>$200</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <a href="#"><img src="images/cat.jpg" alt="Cat" /></a>
+        <div class="lable"> 
+          <p><strong>Paramon the Cat</strong><br>$300</p>
+        </div>
+      </div>
+    </div>
   </div>
-
+<!-- Bottom -->
+  <div class="bottom" >
+    <ul class="pages">
+      <li><a href="#"><img src="images/angle_left.png" /></a></li>
+      <li><a href="#" class="active3">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#"><img src="images/angle_right.png" /></a></li>
+      <li><a href="#">View All</a></li>
+    </ul>
+  </div>
+ 
 <!-- Back to top -->
   <div class="top">
     <div>

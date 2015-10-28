@@ -205,6 +205,9 @@ hr {
   .hero-text {
     font-size: 0.56em;
   }
+  .sign p {
+    font-size: 1em;
+  }
 }
 @media all and (max-width: 420px) {
   .hero-text {
@@ -273,11 +276,6 @@ hr {
   color: #721B3F;
   margin: 0.4em 0;
 }
-@media all and (max-width: 580px) {
-  .men {
-    flex: 0 1 100%;
-  }
-}
 
 /*Shawls*/
 .sha {
@@ -289,11 +287,6 @@ hr {
     flex: 0 1 48%;
   }
 }
-@media all and (max-width: 580px) {
-  .sha {
-    flex: 0 1 100%;
-  }
-}
 
 /*Toys*/
 .toy {
@@ -303,11 +296,6 @@ hr {
 @media all and (max-width: 768px) {
   .toy {
     flex: 0 1 48%;
-  }
-}
-@media all and (max-width: 520px) {
-  .toy {
-    flex: 0 1 100%;
   }
 }
 
@@ -432,10 +420,10 @@ text-decoration: none;
   display: -webkit-flex;
   display: flex;
 
-  -webkit-flex-flow: row nowrap;
-  -webkit-justify-content: space-around; 
-  -moz-justify-content: space-around; 
-  -ms-justify-content: space-around;
+  -webkit-flex-flow: row wrap;
+  -webkit-justify-content: space-between; 
+  -moz-justify-content: space-between; 
+  -ms-justify-content: space-between;
   justify-content: space-between;
   align-items: flex-start;
   align-content: space-between;
@@ -447,9 +435,63 @@ text-decoration: none;
   color: #FFDA6B;
 }
 
-/* Categories */
+/* Subitle */
+.subtitle {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  -webkit-justify-content: space-between; 
+  -moz-justify-content: space-between; 
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 50em;
+  margin: 2.5em 0 0 8.5em;
+}
+.subtitle > * {
+  
+}
+.subtitle h2 {
+  margin: 0;
+  font-weight: 400; 
+}
+.sortby {
+  position: relative;
+}
+.sortby span {
+  position: absolute;
+  left: -3.5em;
+  top: 0.4em;
+}
+.sort {
+  border: 1px solid #9B9B9B;
+  height: 25px;
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+  color: #555052;
+}
+
+/* Navigation */
 .navi {
-  margin: 5em 2.5em 0 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: column nowrap;
+  -webkit-justify-content: flex-start; 
+  -moz-justify-content: flex-start; 
+  -ms-justify-content: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 140px;
+  margin-top: 0.6em;
 }
 ul {
   list-style-type: none;
@@ -476,35 +518,6 @@ ul li a:hover {
   font-weight: 700;
 }
 
-/* Title */
-.subtitle {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-
-  -webkit-flex-flow: row wrap;
-  -webkit-justify-content: space-around; 
-  -moz-justify-content: space-around; 
-  -ms-justify-content: space-around;
-  justify-content: space-between;
-  align-items: flex-end;
-
-  margin-top: 2.5em;
-}
-.subtitle h2 {
-  margin: 0;
-  font-weight: 400; 
-}
-.sortby {
-  position: relative;
-}
-.sortby span {
-  position: absolute;
-  left: -3.5em;
-}
-
 /* Content */
 .photos {
   display: -webkit-box;
@@ -514,18 +527,17 @@ ul li a:hover {
   display: flex;
 
   -webkit-flex-flow: row wrap;
-  -webkit-justify-content: space-around; 
-  -moz-justify-content: space-around; 
-  -ms-justify-content: space-around;
+  -webkit-justify-content: space-between; 
+  -moz-justify-content: space-between; 
+  -ms-justify-content: space-between;
   justify-content: space-between;
   align-items: flex-start;
   align-content: space-between;
-}
-.photos {
+  width: 50em;
   margin-top: 0.6em;
 }
 .item {
-  flex: 0 1 32%;
+  width: 32%;
 }
 .item img {
   width: 100%;
@@ -540,18 +552,28 @@ ul li a:hover {
     flex: 0 1 48%;
   }
 }
-@media all and (max-width: 560px) {
-  .item {
-    flex: 0 1 100%;
-  }
-}
 
 /* Bottom */
-table {
-  height: 0.2em;
+.bottom {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  -webkit-justify-content: center; 
+  -moz-justify-content: center; 
+  -ms-justify-content: center;
+  justify-content: center;
+  align-items: flex-start;
+  width: 58.5em;
 }
-.pages td {
-  padding: 0 0.36em;
+.pages {
+  margin: 0;
+}
+.pages li {
+  display: inline;
 }
 .pages a {
   font-size: 0.9em;
@@ -562,4 +584,11 @@ table {
 }
 .active3 {
   text-decoration: none;
+}
+
+/* Mobile */
+@media all and (max-width: 580px) {
+  .navi {
+    display: none;
+  }
 }
